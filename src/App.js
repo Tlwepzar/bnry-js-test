@@ -8,15 +8,12 @@ class App extends React.Component {
         this.state = {}
     }
     render() {
-        return ( <
-            div className = "App" >
-            <
-            Slider / >
-            <
-            p > { this.state.apiResponse } < /p> <
-            /div>
-        );
+        return (
+            <div className="App">
+                <Slider />
+            </div>
+            );
+        }
     }
-}
-
+    
 export default App;
