@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import ReactTooltip from 'react-tooltip'
 import './slider.scss';
 import ImgComp from './ImgComp';
+
 import i1 from './pics/1.jpg';
 import i2 from './pics/2.jpg';
 import i3 from './pics/3.jpg';
@@ -37,12 +39,15 @@ function Slider() {
                 })
             }
             {/* navigation buttons */}
+
             <button id="goLeft" onClick={goLeft}>
-                <i class="fas fa-chevron-left"></i>
+                <i className="fas fa-chevron-left" data-tip="previous"></i>
+                <ReactTooltip />
             </button>
 
             <button id="goRight" onClick={goRight}>
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right" data-tip="next"></i>
+                <ReactTooltip />
             </button>
         </div>
     )

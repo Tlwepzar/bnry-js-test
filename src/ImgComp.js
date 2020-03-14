@@ -1,8 +1,8 @@
 import React from 'react';
 
-function ImgComp({src}) {
-    let imgStlyes={
-        width: 100+"%",
+function ImgComp({ src }) {
+    let imgStlyes = {
+        width: 100 + "%",
         height: "auto"
     }
     return <img src={src} alt="slide-img" style={imgStlyes}></img>
