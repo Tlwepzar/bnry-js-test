@@ -33,7 +33,12 @@ function Slider() {
                 sliderArr.map((item, index) => {
                     return (
                         <div key={index} className="slide" style={{ transform: `translateX(${x}%)` }}>
-                            {item}
+                            <div>
+                                {item}
+                            </div>
+                            <div>
+                                <p>slide {index + 1}</p>
+                            </div>
                         </div>
                     )
                 })

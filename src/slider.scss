@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: black;
+    // background: black;
 }
 
 .slide {
@@ -42,5 +42,13 @@
 
 #goRight {
     right: -250px;
+    @extend %btn-styles;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    margin-top: 550px;
+    bottom: 10px;
+    left: 620.5px;
     @extend %btn-styles;
 }
